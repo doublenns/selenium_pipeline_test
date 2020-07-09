@@ -11,4 +11,6 @@ options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 driver.get("https://scrapethissite.com")
+print("URl of current page:", driver.current_url)
+print(f"Title of current page: <{driver.title}>")
 driver.quit()
