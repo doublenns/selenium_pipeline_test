@@ -11,3 +11,4 @@ options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 driver.get("https://python.org")
+driver.quit()
